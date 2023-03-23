@@ -6,7 +6,7 @@ const getMovies = (req, res) => {
         api_key: 'ffa9544f9617b768fcb7fde474d40490',
         language: 'en-US',
         page: 1,
-        include_adult: false,
+        include_adult: false
     });
 
     axios.get(`https://api.themoviedb.org/3/movie/${req.body.type}?${query}`)
